@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(void){
-//Структура
+
 struct stc  {
 int n;
 char s[255];
