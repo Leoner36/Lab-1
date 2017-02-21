@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-int main(void){
-
+int main(int argc, char *argv[]){
+//Структура
 struct stc  {
 int n;
 char s[255];
@@ -9,7 +9,7 @@ float f; } str;
 
 char fname [50];
 FILE *file;
-file=fopen("data.dat", "rb");
+file=fopen(argv[1], "rb");
 
 while (file == NULL){
 printf(" Error opening file\n Enter a new filename or file path (Example: file.dat or C:\\\\Users\\\\Desktop\\\\file.dat):");
